@@ -22,7 +22,7 @@ body{
 
 .main-width{
     max-width: 1440px;
-    margin: auto 240px;
+    margin: 0 auto;
 }
 .header{
     background-color: var(--bg-color);
@@ -32,21 +32,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin-bottom: 50px;
 }
 .navbar h1 .logo{
     text-decoration: none;
-    font-size: 47px;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--primary-black);
     margin-top: 50px;
 }
 .navbar ul{
     margin-top: 50px;
+    display: flex;
 }
 .navbar ul li{
     list-style: none;
-    display: inline-block;
 }
 .navbar ul li a{
     text-decoration: none;
@@ -60,20 +60,18 @@ body{
 .banner-content{
     text-align: center;
 }
-.banner-headline{
-    margin: 120px 240px 50px 240px;
-    width: 850px;
-    height: 220px;
+.banner-titles{
+    max-width: 850px;
+    margin: 0 auto;
 }
 
-.banner-headline h1{
-    text-align: center;
-    font-size: 75px;
+.banner-content h1{
+    font-size: 4rem;
     color: var(--primary-black);
     font-weight: bold;
 }
 
-.banner-headline p{
+.banner-titles p{
     font-size: 20px;
     color: var(--dark-2);
 }
@@ -86,21 +84,24 @@ body{
     background-color: var(--main-color);
     border-radius: 5px;
     color: #fff;
+    margin-top: 50px;
 }
 
 .banner-img{
+    width: 100%;
     margin: 50px auto;
+    border-radius: 15px;
 }
+
 
 
 /* About us */
 .about-us{
     margin-top: 100px;
     background: #fff;
-}
-.about-us-container{
     display: flex;
 }
+
 
 .text1{
     font-size: 45px;
@@ -120,7 +121,7 @@ body{
 }
 
 .about-info-container{
-    width: 580px;
+    width: 650px;
     align-items: center;
     margin-left: 50px;
 }
@@ -128,17 +129,51 @@ body{
     margin-top: 15px;
     font-size: 20px;
     color: var(--dark-2);
-
+    
 }
-.about-us-container{
+.img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 .img-container img{
-    width: 342px;
-    height: 342px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .btn2{
     margin-top: 20px;
+}
+
+
+/* ---------- Responsive------------ */
+
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .navbar ul,
+    .about-us{
+        flex-direction: column;
+    }
+    .img-container{
+        margin: 10px;
+    }
+    .header{
+        padding: 20px;
+    }
+    .about-info-container{
+        width: 450px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .about-us{
+        flex-direction: column;
+    }
+    .img-container{
+        margin: 10px;
+    }
+    .header{
+        padding: 20px;
+    }
 }
