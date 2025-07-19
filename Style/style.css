@@ -127,9 +127,9 @@ body{
 }
 .about-info-container p{
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--dark-2);
-    
+    font-weight: 500;
 }
 .img-container{
     display: grid;
@@ -146,6 +146,51 @@ body{
 }
 
 
+/* -----------Some Facts----------- */
+.some-facts{
+    margin: 70px auto;
+}
+.facts-content{
+    width: 540px;
+}
+.facts-content .facts-title{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.facts-content p{
+    font-size: 1.25rem;
+    color: var(--dark-2);
+    margin-top: 20px;
+    font-weight: 500;
+}
+.facts-cards-container{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.facts-card{
+    border: 2px solid var(--main-color);
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+.card-content .title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--primary-black);
+    margin-top: 5px;
+}
+.card-content p{
+    font-size: 1.25rem;
+    color: var(--dark-2);
+    margin-top: 8px;
+    font-weight: 600;
+}
 /* ---------- Responsive------------ */
 
 @media screen and (max-width: 576px) {
@@ -164,6 +209,24 @@ body{
         width: 450px;
         margin-left: 20px;
     }
+
+    /* Facts Responsive  */
+    .some-facts{
+        /* margin: 20px; */
+        width: 550px;
+    }
+    .facts-cards-container{
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    .facts-content{
+        width: 450px;
+        margin-left: 20px;
+    }
+    
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
