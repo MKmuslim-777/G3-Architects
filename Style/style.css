@@ -24,6 +24,15 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
+.section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--primary-black);
+    margin-top: 5px;
+}
+
+
+
 .header{
     background-color: var(--bg-color);
 }
@@ -146,6 +155,76 @@ body{
 }
 
 
+/* Features Styles */
+.features{
+    margin: 75px auto;
+}
+.features-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-card{
+    width: 468px;
+    height: 106px;
+    border-left: 5px solid var(--main-color);
+    padding-left: 15px;
+    align-items: center;
+}
+.simple-text{
+    width: 640px;
+}
+.simple-text p{
+    font-size: 1.25rem;
+    color: var(--dark-2);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.features-card{
+    width: 680px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 1px 20px 0 #0000000f;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.features-card h2{
+    color: var(--primary-black);
+    font-size: 1.55rem;
+    margin: 0px 0px;
+}
+.features-card p{
+    font-size: 1.25rem;
+    color: var(--dark-2);
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.features-img-container img{
+    width: 100%;
+}
+.badge-btn{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 40px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+.badge-title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.badge-title2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 /* -----------Some Facts----------- */
 .some-facts{
     margin: 70px auto;
@@ -170,7 +249,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
 }
 .facts-card{
-    border: 2px solid var(--main-color);
+    border: 4px solid var(--main-color);
     width: 240px;
     height: 240px;
     border-radius: 10px;
@@ -179,12 +258,7 @@ body{
     justify-content: center;
     text-align: center
 }
-.card-content .title, .sponsor-title-container h1{
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: var(--primary-black);
-    margin-top: 5px;
-}
+
 .card-content p, .sponsor-title-container p{
     font-size: 1.25rem;
     color: var(--dark-2);
@@ -257,6 +331,26 @@ body{
         width: 500px;
     }
     
+    .features{
+        margin: 20px;
+    }
+
+    .features-container{
+        flex-direction: column;
+    }
+    .features-card-container{
+        width: 500px;
+        margin: 0 20px;
+    }
+    .features-card,
+    .simple-text{
+        width: 480px;
+    }
+    .badge-btn{
+        margin-top: 20px;
+        margin-left: 70px;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
